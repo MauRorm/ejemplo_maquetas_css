@@ -1,0 +1,98 @@
+body {
+	background-image: url("../resources/index-background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#container {
+	position: relative;
+	margin-top: 5%;
+	width: 100%;
+	height: 100%;
+	transition: 1s;
+}
+
+#description_wrap {
+	background-image: url("../resources/madera.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: top;  /*vertical align ayuda a alinear elementos inline verticalmente, eso porque description wrap se bajaba*/
+	display: inline-block;
+	word-wrap: break-word; /*word-wrap break word sirve para ajustar un texto a un contenedor de forma liquida*/
+	width: 70%;
+	padding: 2%;
+	text-align: justify;
+}
+
+#last_adventure_wrap {
+	background-image: url("../resources/madera.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: top;
+	word-wrap: break-word;
+	display: inline-block;
+	width: 20%;
+	float: right;
+	padding: 2%;
+	text-align: justify;
+}
+
+.image_description {
+	margin-top: 10px;
+	margin: 0px auto 0px;
+	width: 100px;
+	height: 100px;
+	background-image: url("../resources/last-adventure.jpg");
+	background-repeat: no-repeat;
+	background-size: cover; /*cover auto ajusta el tamaño de la imagen al contenedor*/
+}
+
+.menu_wrap {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+.menu_wrap ul {
+	list-style-type: none;
+}
+
+.menu_wrap a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 1s
+}
+
+.menu_wrap a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.menu_wrap .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+li form {
+	position: absolute;
+	margin-top: 10%;
+    text-align: left;
+    text-decoration: none;
+}
+
+	/*---------media query---------*/
+
+@media (max-width: 350px) {
+}
