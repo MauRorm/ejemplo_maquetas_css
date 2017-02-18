@@ -55,7 +55,7 @@ body {
     top: 0;
     left: 0;
     background-color: #111;
-    overflow-x: hidden;
+    overflow-x: hidden;			/*el valor de hidden es para ocultar los valores del menu en el eje x, sino se muestran aunque el menu este cerrado*/
     transition: 1s;
     padding-top: 60px;
 }
